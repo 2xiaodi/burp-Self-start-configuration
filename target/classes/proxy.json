@@ -1,0 +1,37 @@
+{
+    "proxy":{
+        "request_listeners":[
+            {
+                "certificate_mode":"per_host",
+                "custom_tls_protocols":[
+                    "SSLv3",
+                    "TLSv1",
+                    "TLSv1.1",
+                    "TLSv1.2",
+                    "TLSv1.3"
+                ],
+                "enable_http2":true,
+                "listen_mode":"loopback_only",
+                "listener_port":8082,
+                "running":true,
+                "use_custom_tls_protocols":false
+            },
+            {
+                "certificate_mode":"per_host",
+                "custom_tls_protocols":[
+                    "SSLv3",
+                    "TLSv1",
+                    "TLSv1.1",
+                    "TLSv1.2",
+                    "TLSv1.3"
+                ],
+                "enable_http2":true,
+                "listen_mode":"specific_address",
+                "listen_specific_address":"10.219.108.139",
+                "listener_port":8081,
+                "running":true,
+                "use_custom_tls_protocols":false
+            }
+        ]
+    }
+}
